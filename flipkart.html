@@ -1,0 +1,377 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Flipkart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://logos-world.net/wp-content/uploads/2020/12/Flipkart-Logo-2011.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            header{
+                background-color: white;
+                height: 65.6px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                justify-content: space-around; 
+                position: sticky;
+                z-index: 999;  
+                top: 0;
+            }
+            .plus{
+                color: #ffc200;
+                font-size: 14px;
+                font-family: Jost, sans-serif;
+                font-weight: 500;
+                margin-left: 0px;
+            }
+            .explore{
+                color: #9e9e9e;
+                font-size: 14px;
+                font-family: Jost, sans-serif;
+                margin-left: 42px;
+                font-weight: 500;
+            }
+            .search{
+                background-color: rgb(183 233 239);
+                padding: 8px;
+                width: 680px;
+                margin-left: 10px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .search input{
+                border: none;
+                width: 380px;
+                outline: none;
+                background-color: rgb(183 233 239);
+                font-size: 14px;
+            }
+            .fa-solid {
+                margin-left: -409px;
+                margin-right: 629px;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+            nav {
+                background-color: white;
+                min-height: 126px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-top: 8px;
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                
+            }
+            .nav_img {
+                height: 64px;
+                width: 64px;
+                padding-left: 35px;
+                padding-right: 36px;
+
+            }
+            .banner{
+                background-color: #f0f0f0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 250px;
+                width: 1504px;
+                margin-top: 15px;
+            }
+            .product_card_one_header {
+                background-color: white;
+                height: 80px;
+                margin-top: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+
+            }
+            .product_card_one{
+                background-color: white;
+                height: 264px;
+                margin-left: 10px;
+                margin-right: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                /* grid-template-rows: 200px;
+                grid-template-columns: 252px; */
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+            }
+            .border{
+                border: 1px solid gray;
+                border-radius: 3px;
+                width: 200px;
+                height: 252px; 
+                margin-bottom: 5px; 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                /* align-items: start; */
+            }
+            .product_card_small{
+                background-color: white;
+                height: 598px;
+                width: 490px;
+                margin-left: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                /* grid-template-rows: 200px;
+                grid-template-columns: 252px; */
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .border_of_small{
+                border: 1px solid gray;
+                border-radius: 3px;
+                width: 225px;
+                height: 289px; 
+                /* margin-bottom: 5px;  */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            .product_card_header_small {
+                background-color: white;
+                height: 80px;
+                width: 490px;
+                margin-top: 15px;
+                margin-left: 11px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+            }
+            .conc{
+                height: 220px;
+                background-color: #111111;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 171px;
+                grid-template-rows: 193px;
+                margin-top: 200px;
+                grid-auto-flow: column;
+                padding-top: 40px;
+                grid-gap: 20px;
+
+            }
+            .conc_child{
+                
+            }
+            .txt_styles{
+                font-size: 12px;
+                color: #fff;
+                font-family: Jost, sans-serif;
+                font-weight: bold;
+            }
+            .txt_styles:hover{
+                text-decoration: underline solid white;
+            }
+            .txt_two{
+                font-size: 13px;
+                color: #fff;
+                font-family: Jost, sans-serif;
+                font-weight: 300;
+            }
+            footer{
+                width: 100%;
+                height: 70px;
+                background-color: #111111;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-around;
+                border-top: 1px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: #f0f0f0;">
+            <header>
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-095e08.svg " alt="" width="130px" height="22px" style="margin-top: 23px; margin-bottom: -19px;">
+                    <p><i class="explore">Explore</i>
+                        <span><i class="plus">plus</i></span>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg" alt="" width="10px" height="10px">
+                    </p>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search for Products Brands and More">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img style="height: 24px; width: 24px; margin-right: 8px;" src="./images/header1.png" alt="">
+                    <a style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 400;" href="">Become a Seller</a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img style="height: 24px; width: 24px; margin-right: 8px;" src="./images/header2.png" alt="">
+                    <a style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 400;" href="">Sign in</a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img style="height: 24px; width: 24px; margin-right: 8px;" src="./images/header3.png" alt="">
+                    <a style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 400;" href="">Cart</a>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img style="height: 24px; width: 24px; margin-right: 8px;" src="./images/header4.png" alt="">
+                    <a href=""></a>
+                </div>
+            </header>
+            <nav>
+                <a href=""><img class="nav_img" src="./images/nav1.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Grocery</div></a>
+                <a href=""><img class="nav_img" src="./images/nav2.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Mobiles</div></a>
+                <a href=""><img class="nav_img" src="./images/nav3.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Fashion</div></a>
+                <a href=""><img class="nav_img" src="./images/nav4.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Electronics</div></a>
+                <a href=""><img class="nav_img" src="./images/nav5.jpg" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Home & Furniture</div></a>
+                <a href=""><img class="nav_img" src="./images/nav6.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Appliance</div></a>
+                <a href=""><img class="nav_img" src="./images/nav7.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Travel</div></a>
+                <a href=""><img class="nav_img" src="./images/nav8.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Beauty, Toys & More</div></a>
+                <a href=""><img class="nav_img" src="./images/nav9.png" alt=""><div style="font-family: Jost, sans-serif; font-weight: 500;">Two Wheelers</div></a>
+            </nav>
+            <div class="banner">
+                <img style="height: 250px; width: 1483px;" src="./images/flip_banner.jpg" alt="">
+            </div>
+            <div class="product_card_one_header">
+                <p style="font-size: 22px; font-family: Jost, sans-serif; font-weight: 500; margin-left: 20px;">Best of Electronics</p>
+            </div>
+            <div class="product_card_one">
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/l4pxk7k0/usb-gadget/g/8/v/dlk5526cg-11-philips-original-imagfjxzfsgu7nvu.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/flap/210/210/image/20c224cd52ae7a87.jpg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/xif0q/dslr-camera/l/c/w/zv-e1l-12-1-zv-e1l-sony-original-imagrveqp2jrz9ay.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/xif0q/power-bank/d/a/f/-original-imagky3e8yp5ebvr.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/l2jcccw0/memory-card/sdxc-uhs-i-card/6/b/c/sdsqua4-256g-gn6mn-sandisk-original-imagdv34rzuhp9f2.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/xif0q/monitor/m/a/b/-original-imagsatbymyszzjf.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+            </div>
+            <div class="product_card_one_header">
+                <p style="font-size: 22px; font-family: Jost, sans-serif; font-weight: 500; margin-left: 20px;">Beauty, Food, Toys & More</p>
+            </div>
+            <div class="product_card_one">
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim2.flixcart.com/image/612/612/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/krtjgcw0/microphone/x/h/j/3-5mm-clip-metal-microphone-for-voice-recording-lapel-mic-mobile-original-imag5gxrug6fcbct.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+                <div class="border"><img style="width: 198px; height: 198px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 16px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px;">From ₹6990</p></center></div>
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <div>
+                    <div class="product_card_header_small">
+                        <p style="font-size: 22px; font-family: Jost, sans-serif; font-weight: 500; margin-left: 20px;">Best of Electronics</p>
+                    </div> 
+                    <div class="product_card_small">
+                        <div class="border_of_small"><img style="width: 223px; height: 223px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px; color: green;">Min. 50% Off</p></center></div>
+                        <div class="border_of_small"><img style="width: 223px; height: 223px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px; color: green;">Min. 50% Off</p></center></div>
+                        <div class="border_of_small"><img style="width: 223px; height: 223px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px; color: green;">Min. 50% Off</p></center></div>
+                        <div class="border_of_small"><img style="width: 223px; height: 223px; aspect-ratio: 1 / 1; object-fit: contain;" src="https://rukminim1.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=80" alt=""><center style="font-size: 16px; font-family: Jost, sans-serif; color: black; font-weight: 400; margin-top: 5px;">Printers <p style="font-size: 17px; font-family: Jost, sans-serif; font-weight: 600; margin-top: -1px; letter-spacing: -.01px; color: green;">Min. 50% Off</p></center></div>
+                    </div>
+                </div>
+                <div><img style="height: 680px; width: 975.5px; margin-left: 7px; margin-top: 15px;" src="https://rukminim1.flixcart.com/www/1070/750/promos/22/05/2023/56b829f7-d4ea-40e9-9c35-900560809a09.jpg?q=80" alt=""></div>  
+            </div>  
+            <div class="conc">
+                <div class="conc_child" style="margin-left: 46px;">
+                    <div style="color: #878787;font-size: 12px; font-family: Jost, sans-serif;">ABOUT</div>
+                    <a class="txt_styles" href="">Contact Us</a><br>
+                    <a class="txt_styles" href="">About Us</a><br>
+                    <a class="txt_styles" href="">Careers</a><br>
+                    <a class="txt_styles" href="">Flipkart Stories</a><br>
+                    <a class="txt_styles" href="">Press</a><br>
+                    <a class="txt_styles" href="">Flipkart Wholesales</a><br>
+                    <a class="txt_styles" href="">Cleartrip</a><br>
+                    <a class="txt_styles" href="">Corporate Information</a>
+                </div>
+                <div class="conc_child" style="margin-left: 63px;">
+                    <div style="color: #878787;font-size: 12px; font-family: Jost, sans-serif;">HELP</div>
+                    <a class="txt_styles" href="">Payments</a><br>
+                    <a class="txt_styles" href="">Shipping</a><br>
+                    <a class="txt_styles" href="">Cancellation & Returns</a><br>
+                    <a class="txt_styles" href="">FAQ</a><br>
+                    <a class="txt_styles" href="">Report infringement</a><br>
+                </div>
+                <div class="conc_child" style="margin-left: 70px;">
+                    <div style="color: #878787;font-size: 12px; font-family: Jost, sans-serif;">CONSUMER POLICY</div>
+                    <a class="txt_styles" href="">Cancellation & Returns</a><br>
+                    <a class="txt_styles" href="">Terms Of Use</a><br>
+                    <a class="txt_styles" href="">Security</a><br>
+                    <a class="txt_styles" href="">Privacy</a><br>
+                    <a class="txt_styles" href="">Sitemap</a><br>
+                    <a class="txt_styles" href="">Grievance Redressal</a><br>
+                    <a class="txt_styles" href="">EPR Compliance</a><br>
+                </div>
+                <div class="conc_child" style="margin-left: 60px;">
+                    <div style="color: #878787;font-size: 12px; font-family: Jost, sans-serif;">SOCIAL</div>
+                    <a class="txt_styles" href="">Facebook</a><br>
+                    <a class="txt_styles" href="">Twitter</a><br>
+                    <a class="txt_styles" href="">YouTube</a><br>
+                </div>
+                <div class="conc_child" style="border-left: 1px solid gray; padding-left: 20px; margin-left: 35px;">
+                    <div style="color: #878787; font-size: 12px; font-family: Jost, sans-serif;">Mail Us:</div>
+                    <div style="line-height: 6px;">
+                        <p class="txt_two">Flipkart Internet Private Limited, </p>
+                        <p class="txt_two"> Buildings Alyssa, Begonia</p>
+                        <p class="txt_two"> Clove Embassy Tech Village, </p>
+                        <p class="txt_two"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                        <p class="txt_two"> Bengaluru, 560103, </p>
+                        <p class="txt_two"> Karnataka, India</p>
+                    </div>
+                </div>
+                <div class="conc_child">
+                    <div style="color: #878787; font-size: 12px; font-family: Jost, sans-serif;">Registered Office Address:</div>
+                    <div style="line-height: 6px;">
+                        <p class="txt_two">Flipkart Internet Private Limited, </p>
+                        <p class="txt_two"> Buildings Alyssa, Begonia &amp; </p>
+                        <p class="txt_two"> Clove Embassy Tech Village, </p>
+                        <p class="txt_two"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                        <p class="txt_two"> Bengaluru, 560103, </p>
+                        <p class="txt_two"> Karnataka, India </p>
+                        <p class="txt_two"> CIN : U51109KA2012PTC066107 </p>
+                        <p class="txt_two">Telephone:
+                            <a href="tel:044-45614700">044-45614700</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div style="display: flex;">
+                    <img style="margin-right: 7px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg" alt="">
+                    <a style="font-size: 12px; font-family: Jost, sans-serif; color: white;">Become a Seller</a>
+                </div>
+                <div style="display: flex;">
+                    <img style="margin-right: 7px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg" alt="">
+                    <a style="font-size: 12px; font-family: Jost, sans-serif; color: white;"href="">Advertise</a>
+                </div>
+                <div style="display: flex;">
+                    <img style="margin-right: 7px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg" alt="">
+                    <a style="font-size: 12px; font-family: Jost, sans-serif; color: white;"href="">Gift Cards</a>
+                </div>
+                <div style="display: flex;">
+                    <img style="margin-right: 7px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg" alt="">
+                    <a style="font-size: 12px; font-family: Jost, sans-serif; color: white;"href="">Help Centre</a>
+                </div>
+                <span style="font-size: 12px; font-family: Jost, sans-serif; color: white;">© 2007-2023 Flipkart.com</span>
+                <div>
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
